@@ -13,9 +13,9 @@ status:
   icon: ☕️
 
 # Organizations/Affiliations
-Organizations:
- name: Capgemini
- url: "https://www.capgemini.com/no-no/"
+#Organizations:
+# name: Capgemini
+# url: "https://www.capgemini.com/no-no/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My interests include technology, programming and analytics.
