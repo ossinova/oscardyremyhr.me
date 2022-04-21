@@ -29,7 +29,7 @@ experience:
     date_start: '2021-12-01'
     date_end: ''
     description: |2-
-    Consulting on a project involving building a seamless data platform. Data Engineering tasks consisting of buoilding a delta lake using Azure Data Factory and Databrick.
+      Consulting on a project involving building a seamless data platform. Data Engineering tasks consisting of buoilding a delta lake using Azure Data Factory and Databrick.
     
   - title: Junior Data Engineer
     company: HeltHjem
@@ -38,15 +38,15 @@ experience:
     date_start: '2020-11-01'
     date_end : '2021-07-01'
     description: |2-
-    Built AWS data warehouse using:
+      Built AWS data warehouse using:
 
-    * SQS
-    * S3
-    * Athena
-    * Glue
-    * Lambda
-    * CloudWatch Events
-    * QuickSight
+      * SQS
+      * S3
+      * Athena
+      * Glue
+      * Lambda
+      * CloudWatch Events
+      * QuickSight
 
   - title: Data Consultant
     company: HeltHjem
@@ -55,11 +55,11 @@ experience:
     date_start: '2020-08-01'
     date_end: '2020-11-01'
     description: |2-
-    Responsibilities include:
+      Responsibilities include:
 
-    * Analysing
-    * Modelling
-    * Deploying
+      * Analysing
+      * Modelling
+      * Deploying
 
 design:
   columns: '1'
