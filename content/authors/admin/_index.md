@@ -10,7 +10,7 @@ role: 'Consultant'
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: ✍🏼
 
 # Organizations/Affiliations
 #Organizations:
@@ -52,7 +52,7 @@ social:
 #email: ""
 ---
 
-Oscar Dyremyhr is a Inisghts & Data Consultant @ Capgemini. He holds a MSc in Business Analytics from BI Norwegian Business School. A proactive, energetic, team-oriented and social person aiming to become a skilled data engineer/data analyst.
+Oscar Dyremyhr is a Insights & Data Consultant @ Capgemini. He holds a MSc in Business Analytics from BI Norwegian Business School. A proactive, energetic, team-oriented and social person aiming to become a skilled data engineer/data analyst.
 
 Interests:
 - Data Engineering
