@@ -9,8 +9,4 @@ main:
     weight: 10
   - name: Resumé
     url: about/
-<<<<<<< HEAD
     weight: 20
-=======
-    weight: 20
->>>>>>> 83cf3998e52e3d72f514aa9ed103dc62d8e82df4
