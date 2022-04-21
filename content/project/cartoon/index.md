@@ -2,7 +2,14 @@
 title: Cartoon Face Generator
 summary: Write about your project here...
 tags:
-  - CV
+  - MP
 date: 2022-01-01
-external_link: http://github.com
 ---
+
+This is a test 
+
+```Python
+
+print("Hello World!")
+
+```
