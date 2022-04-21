@@ -1,7 +1,7 @@
 ---
 title: Automating tasks with cron
 date: 2022-04-21T03:35:40.926Z
-draft: true
+draft: false
 featured: false
 image:
   filename: featured
