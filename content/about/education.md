@@ -43,7 +43,7 @@ experience:
     description: |2-
         * Teaching Assitant in Python
         * Thon (Philanthropy) member
-        *  2x Deans List Recipient
+        * 2x Deans List Recipient
 
 design:
   columns: '1'
