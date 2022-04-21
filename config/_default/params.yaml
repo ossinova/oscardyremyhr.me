@@ -69,7 +69,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/ossinova/oscardyremyhr.me'
     content_dir: content
     branch: main
   avatar:
