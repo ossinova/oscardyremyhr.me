@@ -20,21 +20,7 @@ rganizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My interests include technology, programming and analytics.
 
-interests:
-  - Data Engineering
-  - Machine Learning
-  - Artificial Intelligence
-  - Automation/Scripting
-  - Cloud Computing
-  - Data Visualization
 
-#skills:
-skills:
-  - Programming
-  - ETL
-  - SQL
-  - Databases
-  - Analysis
 
 
 # Social/Academic Networking
@@ -50,7 +36,7 @@ social:
     link: https://instagram.com/ossidaboss
   - icon: linkedin
     icon_pack: fab
-    link: https://linkedin.com/oscar-dyremyhr
+    link: https://www.linkedin.com/in/oscar-dyremyhr/
 # Uncomment below for Github link
   - icon: github
     icon_pack: fab
@@ -68,5 +54,12 @@ social:
 
 Oscar Dyremyhr is a Inisghts & Data Consultant @ Capgemini. He holds a MSc in Business Analytics from BI Norwegian Business School. A proactive, energetic, team-oriented and social person aiming to become a skilled data engineer/data analyst.
 
+Interests:
+- Data Engineering
+- Machine Learning
+- Artificial Intelligence
+- Automation/Scripting
+- Cloud Computing
+- Data Visualization
 
 {{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
