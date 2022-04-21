@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: MSc Business Analytics
-    company: The Norwegian Business School (BI)
+    company: BI Norwegian Business School
     company_url: ''
     company_logo: org-x
     location: Oslo, Norway
