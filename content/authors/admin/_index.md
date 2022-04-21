@@ -13,7 +13,7 @@ status:
   icon: ☕️
 
 # Organizations/Affiliations
-rganizations:
+Organizations:
  name: Capgemini
  url: "https://www.capgemini.com/no-no/"
 
