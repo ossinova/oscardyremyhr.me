@@ -28,15 +28,13 @@ interests:
   - Cloud Computing
   - Data Visualization
 
-#education:
-education:
-  courses:
-    - course: MSc in Business Analytics
-      institution: BI Norwegian Business School
-      year: 2020
-    - course: BSc in Information Sciences and Technology
-      institution: The Pennsylvania State University
-      year: 2018
+#skills:
+skills:
+  - Programming
+  - ETL
+  - SQL
+  - Databases
+  - Analysis
 
 
 # Social/Academic Networking
