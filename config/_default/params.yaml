@@ -62,6 +62,8 @@ features:
     extra_languages:
       - r
       - latex
+      - pyhton
+      - bash
   math:
     enable: false
   privacy_pack:
