@@ -51,7 +51,7 @@
   </p>
 </footer>
 
-  {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
+{{- if (not .Site.Params.disableCodeCopy) }}
 <script>
     document.querySelectorAll('pre > code').forEach((codeblock) => {
         const container = codeblock.parentNode.parentNode;
