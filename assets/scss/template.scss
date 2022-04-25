@@ -113,6 +113,13 @@ ul.network-icon .big-icon {
   font-size: 0.8rem;
 }
 
+code {
+    direction: ltr;
+}
+
+div.highlight {
+    position: relative;
+}
 .copy-code {
   display: none;
   position: absolute;
