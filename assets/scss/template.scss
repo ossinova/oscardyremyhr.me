@@ -117,9 +117,12 @@ code {
     direction: ltr;
 }
 
-div.highlight {
-    position: relative;
+div.highlight 
+pre {
+  position: relative;
 }
+
+
 .copy-code {
   display: none;
   position: absolute;
