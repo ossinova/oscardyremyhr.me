@@ -5,9 +5,11 @@ tags:
   - DE
 date: 2022-01-01
 ShowToc: true
-TocOpen: true
+TocOpen: false
+UseHugoToc: true
 ---
 
+{{< toc >}}
 
 # H1
 
