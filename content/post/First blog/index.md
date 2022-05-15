@@ -5,6 +5,7 @@ tags:
   - DE
 date: 2022-01-01
 ShowToc: true
+UseHugoToc: true
 TocOpen: true
 ---
 
