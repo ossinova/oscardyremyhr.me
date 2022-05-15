@@ -38,12 +38,20 @@ module:
     - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5
     - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
 
+
+  
+############################
+## PARAMS
+############################
+
+params:
+  ShowToc: true
+
+
 ############################
 ## ADVANCED
 ############################
 
-
-ShowToc: true
 enableGitInfo: false
 summaryLength: 30
 paginate: 10
