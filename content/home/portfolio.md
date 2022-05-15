@@ -10,8 +10,8 @@ headless: true
 # Order that this section appears on the page.
 weight: 20
 
-title: ''
-subtitle: ''
+title: 'My Posts'
+subtitle: 'Here you can filter my previous posts'
 
 content:
   # Page type to display. E.g. project.
@@ -34,6 +34,8 @@ content:
       tag: AZ
     - name: Monthly Passion
       tag: MP
+    - name: What is X
+      tag: X
 
 design:
   columns: '1'
@@ -42,5 +44,3 @@ design:
   background: {}
   spacing: {padding: [0, 0, 0, 0]}
 ---
-
-# My Posts
