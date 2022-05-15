@@ -270,5 +270,5 @@
 - id: code_copied
   translation: "copied!"
 
-  - id: toc
+- id: toc
   translation: "Table of Contents"
