@@ -7,7 +7,7 @@ draft: false
 type: book
 featured: false
 image:
-  filename: featured
+  filename: featured1
   focal_point: Smart
   preview_only: false
 weight: 10
@@ -73,7 +73,7 @@ Here are the basics in terms of the syntax:
 
 ### Headings
 
-```
+```markdown
 # Heading 1
 ## Heading 2
 ### Heading 3
