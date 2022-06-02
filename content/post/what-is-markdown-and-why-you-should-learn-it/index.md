@@ -12,7 +12,7 @@ image:
 ---
 {{< table_of_contents >}}
 
-# What is Markdown?
+## What is Markdown?
 
 Markdown has gained popularity because it's easy to use and it's widely accepted across platforms.
 
@@ -25,7 +25,7 @@ Markdown is a markup language just like HTML. We use it to parse text and conver
 
 Many developers like writing in markdown because it gives them fine-grained control over their text and code. We'll see how and why in the coming paragraphs.
 
-# Getting started
+## Getting started
 
 In this guide we'll cover the following topics.
 
@@ -35,7 +35,7 @@ In this guide we'll cover the following topics.
 
 Markdown works in any browser even if you use a simple notepad. But there are certain tools that can help enhance your productivity by providing a real time view (of markdown and rich text) side by side.
 
-## Common .md writing tools
+### Common .md writing tools
 
 The following are some of the tools that support working with markdown:
 
@@ -49,7 +49,7 @@ How to Work with Markdown
 Download VSCode and enable the plugin
 VSCode is a text editor like notepad, but it has many more capabilities. You can also use it for coding and it supports numerous programming languages.
 
-### Using VSCode
+#### Using VSCode
 
 We'll be using VSCode to write and render markdown files.
 
@@ -64,13 +64,13 @@ To work with markdown, simply save the text file with .md extension. After that,
 
 After creating your file and activating the plugin, the workspace should look something like this.
 
-# Markdown in action (Syntax)
+## Markdown in action (Syntax)
 
 In markdown, we use a specific syntax to denote headings, bold text, lists, and other text formatting. Similar to that of HTML. 
 
 Here are the basics in terms of the syntax:
 
-## Headings
+### Headings
 
 ```
 # Heading 1
@@ -80,7 +80,7 @@ Here are the basics in terms of the syntax:
 
 Headings in Markdown are any line which is prefixed with a # symbol. The number of hashes indicates the level of the heading. One hash is converted to an h1, two hashes to an h2 and so on. There are a total of 6 levels which you can make use of - but for most writing, you’ll rarely ever need more than 3.
 
-## Text
+### Text
 
 ```
 *italic*
@@ -93,7 +93,7 @@ If you want to emphasise a word a *little* bit, wrap it in asterisks. For someth
 
 To add a link: wrap the text which you want to be linked in square brackets, followed by the URL to be linked to in parenthesis. An easy way to remember this one is to think of it like turning a word into a button. \[button] and (place to go when the button is clicked) combine to form a [link](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
 
-## Images
+### Images
 
 ```
 ![Programming meme](https://i.pinimg.com/originals/1f/af/97/1faf970bd2131343530726ca4ac6192e.jpg)
@@ -103,7 +103,7 @@ Markdown images have exactly the same formatting as a link, except they’re pre
 
 ![Programming meme](https://i.pinimg.com/originals/1f/af/97/1faf970bd2131343530726ca4ac6192e.jpg)
 
-## Lists
+### Lists
 
 Lists are a formatting nightmare in HTML, but Markdown lists are incredibly easy to manage. For a bullet list, just prefix each element with a `* - or - or +` and they will be converted to dots. You can also create nested lists; just indent a line with 4 spaces and it will be nested under the line above.
 
@@ -114,7 +114,7 @@ Lists are a formatting nightmare in HTML, but Markdown lists are incredibly easy
 
 For numbered lists, do exactly the same thing - but use numbers!
 
-## Quotes
+### Quotes
 
 When you want to add a quote in Markdown, it’s exactly the same as the formatting which you may already be familiar with from your email app of choice when you reply to someone.
 
@@ -122,7 +122,7 @@ When you want to add a quote in Markdown, it’s exactly the same as the formatt
 
 Prefixing the line with a > converts it into a block-quote.
 
-## Code Snippets & Blocks
+### Code Snippets & Blocks
 
 Snippets
 
@@ -157,7 +157,7 @@ print("Hello World!")
 
 This is especially useful for documenting code in the **readme.md** file. 
 
-# Wrapping up
+## Wrapping up
 
 By now I hope you're confident enough to write your own markdown. Once you get the hang of it, it's easy enough. Apart from being simple, it is also very powerful and widely accepted.
 
