@@ -12,7 +12,7 @@ image:
   preview_only: false
 ---
 
-# The What is X, and why you should X it! [Series]
+## The What is X, and why you should X it! [Series]
 
 As a curious individual, I have decided to start a blog tutorial to express my passion for technology and what I stumble upon during my free time.
 
