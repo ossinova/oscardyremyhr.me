@@ -12,6 +12,8 @@ image:
   preview_only: false
 ---
 
+Here you will find my tutorial series
+
 ## Items in this series
 
 {{< list_children >}}
