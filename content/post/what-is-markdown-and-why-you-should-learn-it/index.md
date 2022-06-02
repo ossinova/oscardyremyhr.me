@@ -10,7 +10,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-{{< table_of_contents >}}
+{{% toc %}}
 
 ## What is Markdown?
 
