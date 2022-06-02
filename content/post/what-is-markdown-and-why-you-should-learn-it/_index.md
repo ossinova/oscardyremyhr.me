@@ -11,3 +11,7 @@ image:
   focal_point: Smart
   preview_only: false
 ---
+
+## Items in this series: 
+
+{{< list_children >}}
