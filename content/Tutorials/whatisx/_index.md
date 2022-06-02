@@ -18,7 +18,6 @@ As a curious individual, I have decided to start a blog tutorial to express my p
 
 I have thus started a blog series: “What is {X}, and why you should {X} it!”
 
-
-## Items in this series
+Items in this series
 
 {{< list_children >}}
