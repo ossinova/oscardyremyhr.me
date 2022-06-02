@@ -62,4 +62,4 @@ Interests:
 - Cloud Computing
 - Data Visualization
 
-{{< icon name="download" pack="fas" >}} {{< staticref "uploads/resume.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
+{{< icon name="download" pack="fas" >}} {{< staticref "uploads/Oscar's Resume - updated.pdf" "newtab" >}}Download{{< /staticref >}} my resumé as a PDF.
