@@ -11,7 +11,6 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-{{% toc %}}
 
 ## What is Markdown?
 
