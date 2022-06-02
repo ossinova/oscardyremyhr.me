@@ -103,5 +103,7 @@ extensions:
   academicons:
     enable: false
 
+docs_section_pager: true
+
 params:
   ShowToc: true

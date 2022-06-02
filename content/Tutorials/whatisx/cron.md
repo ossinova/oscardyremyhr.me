@@ -1,8 +1,8 @@
 ---
-title: "What is Markdown, and why you should learn it. "
-subtitle: Learn the power of the Markdown syntax
+title: "What is Cron, and why you should learn it. "
+subtitle: Learn the power of the Cron syntax
 date: 2022-06-02T00:19:30.263Z
-summary: Why you should utilize Markdown in your new project
+summary: Why you should utilize Cron in your new project
 draft: false
 type: book
 featured: false
@@ -10,6 +10,7 @@ image:
   filename: featured
   focal_point: Smart
   preview_only: false
+weight: 20
 ---
 
 ## What is Markdown?
