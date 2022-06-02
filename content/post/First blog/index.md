@@ -1,182 +1,58 @@
 ---
-title: blog post example
-summary: Write about your project here...
+title: Welcome to my blog
+summary: An introduction to my blog
 tags:
-  - DE
+  - Intro
 date: 2022-01-01
 ShowToc: true
 UseHugoToc: true
 TocOpen: true
+draft: false
 ---
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+## Welcome to my blog
 
-<!--more-->
+As a technologist with a passion to explore unknown territories I have decided to share my journey as I deep dive into new and exciting topics (for me).
 
-## Headings
+> What can you expect?
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Through my socials (or here on my portfolio/blog page) you can follow me as I will share interesting posts to the following series (as a start):
 
-# H1
+- Monthly Passion
+  - A series in where I deep dive into something I stumbled on that I have commited to learn and explore a given month
+- What is {X}, and why you should {X} it
+  - A series that involves sharing my findings on new technologies / topics I have stumbled on I think you should know about
 
-## H2
 
-### H3
+## What sort of content will you focus on?
 
-#### H4
+I see this blog as a forum for self growth, and so I envision my content will be rather technical. Luckily, my blog uses Markdown (I will post a entry regarding this soon! Stay tuned 👍). This allows me to do things such as this:
 
-##### H5
+```python
+# Some random python code appeared!
 
-###### H6
-
-## Paragraph
-
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
-
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
-
-## Blockquotes
-
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
-
-#### Blockquote without attribution
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.
->
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-box.
-
-| Name  | Age |
-| ----- | --- |
-| Bob   | 27  |
-| Alice | 23  |
-
-#### Inline Markdown within tables
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-#### Inline Code
-
-`This is Inline Code`
-
-#### Only `pre`
-
-<pre>
-This is pre text
-</pre>
-
-#### Code block with backticks
-
-```
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Example HTML5 Document</title>
-    </head>
-    <body>
-        <p>Test</p>
-    </body>
-</html>
+isBlog = True
+if isBlog == True:
+  print("Awesome, this will be fun!")
+else:
+  print("Bye bye!")
 ```
 
-#### Code block with backticks and language specified
+How cool is that? It definetly turned me on. 
 
-```html {linenos=true}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Example HTML5 Document</title>
-        <meta name="description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
-    </head>
-    <body>
-        <p>Test</p>
-    </body>
-</html>
-```
+Topics in which i will most likley write about includes:
 
-#### Code block indented with four spaces
+- PySpark
+- Regex
+- Cron
+- Python
+- Markdown
+- Data Adoption
+- Data Engineering
+- Data Science (potentially, I wanna learn more)
 
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
+## Blog schedule
 
-#### Code block with Hugo's internal highlight shortcode
+Do the nature of this being my first attempt to write material my ambitions to be overly active is quite small. However, I have a goal to start with at least 2 entries a month and scale up or down based on my time. 
 
-{{< highlight html >}}
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
-#### Gist
-
-{{< gist spf13 7896402 >}}
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-- List item
-- Another item
-- And another item
-
-#### Nested list
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures
-
-{{< youtube sXQxhojSdZM >}}
+If you wish to follow my endevour as I write my thoughts and showq you some tips and tricks, then please follow my [LinkedIn](https://linkedin.com/in/oscar-dyremyhr/)

@@ -3,7 +3,7 @@ title: "What is Regex, and why you should learn it. "
 subtitle: Learn the power of the Regex syntax
 date: 2022-06-02T00:19:30.263Z
 summary: Why you should utilize Regex in your new project
-draft: false
+draft: true
 type: book
 featured: false
 image:

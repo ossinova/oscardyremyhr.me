@@ -3,7 +3,7 @@ title: "What is Cron, and why you should learn it. "
 subtitle: Learn the power of the Cron syntax
 date: 2022-06-02T00:19:30.263Z
 summary: Why you should utilize Cron in your new project
-draft: false
+draft: true
 type: book
 featured: false
 image:
