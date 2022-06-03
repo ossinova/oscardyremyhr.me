@@ -25,9 +25,9 @@ As a technologist with a passion to explore unknown territories I have decided t
 
 Through my socials (or here on my portfolio/blog page) you can follow me as I will share interesting posts to the following series (as a start):
 
-- Monthly Passion
+- [Monthly Passion](../../tutorials/monthlypassion/_index.md)
   - A series in where I deep dive into something I stumbled on that I have commited to learn and explore a given month
-- What is {X}, and why you should {X} it
+- [What is {X}, and why you should {X} it](../../tutorials/whatisx/_index.md)
   - A series that involves sharing my findings on new technologies / topics I have stumbled on I think you should know about
 
 
