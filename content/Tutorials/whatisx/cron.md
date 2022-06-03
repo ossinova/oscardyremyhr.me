@@ -83,6 +83,8 @@ On Windows machines we can use Task Scheduler which does essentially the same th
 
 If you are familiar with AWS Lambda functions then you can schedule the functions based on the aforementioned cron fromula. 
 
+You can do ranges as well by specifying it like so:
+```0 8-10 * 5``` -> every Friday at 8, 9 and 10 am. 
 
 ## Wrapping up
 
