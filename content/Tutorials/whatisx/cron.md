@@ -1,165 +1,94 @@
 ---
-title: "What is Cron, and why you should learn it. "
+title: "What is Cron, and why you should know it. "
 subtitle: Learn the power of the Cron syntax
 date: 2022-06-02T00:19:30.263Z
-summary: Why you should utilize Cron in your new project
-draft: true
+summary: Learn the power of the Cron syntax
+draft: false
 type: book
 featured: false
 image:
   filename: featured
   focal_point: Smart
   preview_only: false
-weight: 20
+weight: 10
 ---
 
-## What is Markdown?
+## What is cron?
 
-Markdown has gained popularity because it's easy to use and it's widely accepted across platforms.
+Wikipedia states, "the cron command-line utility, also known as cron job, is a job scheduler on Unix-like operating systems. Users who set up and maintain software environments use cron to schedule jobs to run periodically at fixed times, dates, or intervals." [Wikipedia, 2022](https://en.wikipedia.org/wiki/Cron)
 
-You can use markdown to write content that can be conveyed in plain text. A good example would be a blog post.
 
-In this article, you'll learn what markdown is and how to use it.
+### Why is cron useful?
 
-What is Markdown?
-Markdown is a markup language just like HTML. We use it to parse text and convert it into a specific format. You can also think of it as a text to HTML converter tool.
+Cron jobs are fairly simple to create and can be run both locally (on Mac and Linux; UNIX based systems) or using a VM instance. A similar service can be used on Windows by utilizing task scheduler.
 
-Many developers like writing in markdown because it gives them fine-grained control over their text and code. We'll see how and why in the coming paragraphs.
+It is a very usueful utility to automate repetitive tasks as it utilizes the terminal to execute commands based on a set time schedule or interval.
 
-## Getting started
+For instance your daily task is to create a pivot table of yesterdays data based on a few dimensions. Rather than doing this manually in excel every single day, creating a Python script that does this for you can be achieved. Using cron this script can then be run in the background using an intuitive command-line utility specifying the interval (i,e once every day at a specific time).
 
-In this guide we'll cover the following topics.
+Assuming we have a Python script that reads a folder on our computer, checks for new files, triggers an action when a new file is found (creating a pivot), then saves the pivot to that excel file and moves it to a separate folder. Added functionality can be made such as emailing the excel file, sending an email notification once the script has run and more.
 
-* How to create your first markdown file.
-* Discuss how markdown can be rendered in VS Code
-* Tools that Support Markdown
+Cron then is set up to run this Pyhton script every morning, and voila! you now automated 10-15 minutes of your day. 
 
-Markdown works in any browser even if you use a simple notepad. But there are certain tools that can help enhance your productivity by providing a real time view (of markdown and rich text) side by side.
+## Declaring a cron job
 
-### Common .md writing tools
+Using crontab we can declare cron jobs using a special formula consisting of 5 intervals or wildcards ``** ** *`` where each wildcard ``*`` represents minute, hour, day of month, day of week...in this case the wilcard means any so his cron job is running every minute of every hour on every day of every month, seven days a week.
 
-The following are some of the tools that support working with markdown:
+To create a job on a UNIX-like based system (MacOS, Linux) we can use Terminal and type ``crontab -e`` to to enter edit mode:
 
-* VSCode (We'll cover this in this article)
-* Atom
-* Haroopad
-* Sublime text
-* MarkPad
+```bash
+# crontab -e
 
-How to Work with Markdown
-Download VSCode and enable the plugin
-VSCode is a text editor like notepad, but it has many more capabilities. You can also use it for coding and it supports numerous programming languages.
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
 
-#### Using VSCode
+## Example 1:
+# Schedule a job at February 2nd, at 9am every year
+# .---------------- minute = 0
+# |  .------------- hour = 9
+# |  |  .---------- day of month = 2nd
+# |  |  |  .------- month (1 - 12) = 2nd (February)
+# |  |  |  |  .---- day of week (0 - 6) = any value
+# |  |  |  |  |
+# 0  9  2  2  *  oscar  /usr/local/bin/yearly_backup
 
-We'll be using VSCode to write and render markdown files.
+## Example 2:
+# Schedule a job every Friday, at noon
+# .---------------- minute = 0
+# |  .------------- hour = 12
+# |  |  .---------- day of month = any value
+# |  |  |  .------- month (1 - 12) = any value
+# |  |  |  |  .---- day of week (0 - 6) = Friday
+# |  |  |  |  |
+# 0  12 *  *  fri  oscar  /usr/local/bin/yearly_backup
 
-You can download VSCode from here.
 
-Once your download is completed, activate the below extension:
+# Empty temp folder every Friday at 5am
+0 5 * * 5 rm -rf /tmp/*
 
-image-118
-VS code extension
-How to create your first markdown file
-To work with markdown, simply save the text file with .md extension. After that, you'll be able to apply markdown syntax.
-
-After creating your file and activating the plugin, the workspace should look something like this.
-
-## Markdown in action (Syntax)
-
-In markdown, we use a specific syntax to denote headings, bold text, lists, and other text formatting. Similar to that of HTML. 
-
-Here are the basics in terms of the syntax:
-
-### Headings
-
-```
-# Heading 1
-## Heading 2
-### Heading 3
+# Backup images to Google Drive every night at midnight
+0 0 * * * rsync -a ~/Pictures/ ~/Google\ Drive/Pictures/
 ```
 
-Headings in Markdown are any line which is prefixed with a # symbol. The number of hashes indicates the level of the heading. One hash is converted to an h1, two hashes to an h2 and so on. There are a total of 6 levels which you can make use of - but for most writing, you’ll rarely ever need more than 3.
+(courtesy of **Corey Schafer**, [Youtube](https://www.youtube.com/watch?v=QZJ1drMQz1A&ab_channel=CoreySchafer), [Github](https://github.com/CoreyMSchafer/code_snippets/blob/master/Cron-Tasks/snippets.txt))
 
-### Text
 
-```
-*italic*
-**bold**
-***bold-italic***
-[link](https://example.com)
-```
+On Windows machines we can use Task Scheduler which does essentially the same thing. Learn more about Windows Task Scheduler [here](https://www.windowscentral.com/how-create-automated-task-using-task-scheduler-windows-10)
 
-If you want to emphasise a word a *little* bit, wrap it in asterisks. For something that needs **more** emphasis: double asterisks. If you really want to ***drive*** the point home, use triple asterisks. If you prefer, you can also use underscores - they’re completely interchangeable.
+If you are familiar with AWS Lambda functions then you can schedule the functions based on the aforementioned cron fromula. 
 
-To add a link: wrap the text which you want to be linked in square brackets, followed by the URL to be linked to in parenthesis. An easy way to remember this one is to think of it like turning a word into a button. \[button] and (place to go when the button is clicked) combine to form a [link](https://www.youtube.com/watch?v=dQw4w9WgXcQ).
-
-### Images
-
-```
-![Programming meme](https://i.pinimg.com/originals/1f/af/97/1faf970bd2131343530726ca4ac6192e.jpg)
-```
-
-Markdown images have exactly the same formatting as a link, except they’re prefixed with a `!`. This time, the text in brackets is the alt text - or the descriptive text for the image.
-
-![Programming meme](https://i.pinimg.com/originals/1f/af/97/1faf970bd2131343530726ca4ac6192e.jpg)
-
-### Lists
-
-Lists are a formatting nightmare in HTML, but Markdown lists are incredibly easy to manage. For a bullet list, just prefix each element with a `* - or - or +` and they will be converted to dots. You can also create nested lists; just indent a line with 4 spaces and it will be nested under the line above.
-
-* Milk
-* Bread
-* Wholegrain
-* Butter
-
-For numbered lists, do exactly the same thing - but use numbers!
-
-### Quotes
-
-When you want to add a quote in Markdown, it’s exactly the same as the formatting which you may already be familiar with from your email app of choice when you reply to someone.
-
-> Markdown is so cool!
-
-Prefixing the line with a > converts it into a block-quote.
-
-### Code Snippets & Blocks
-
-Snippets
-
-Some text with an inline ``` `code` ``` snippet
-
-Some text with an inline `code` snippet
-
-```
-    .my-link {
-        text-decoration: underline;
-    }
-```
-
-If you’re a technical writer, you may want to use example snippets of code to teach your readers a particular syntax (like I’m doing, with this very blog post). Using a single back-tick around a word in a sentence, you can show a quick code snippet.
-
-Indenting by 4 spaces will turn an entire paragraph into a code-block.
-
-Blocks
-
-````
-```python
-print("Hello World!")
-```
-````
-
-You can add syntaxed code if your markdown application / renderer supports it (like Github) by using three  backticks followed by the language ```` ```python````  
-
-```python
-# Python printing
-print("Hello World!")
-```
-
-This is especially useful for documenting code in the **readme.md** file. 
 
 ## Wrapping up
 
-By now I hope you're confident enough to write your own markdown. Once you get the hang of it, it's easy enough. Apart from being simple, it is also very powerful and widely accepted.
+I hope this small introduction gave a overwiew of cron, why and how ir is used, and potenitally why you should know it in case you want to automate tasks.
 
-If you found this post helpful, share it :)
+Useful links:
+
+* Test your cron schedules - [Crontab guru](https://crontab.guru/)
+* Learn more about cron - [What is cron and why it is important - CBTnuggets](https://www.cbtnuggets.com/blog/technology/system-admin/cron-what-is-it-and-why-is-it-important)
