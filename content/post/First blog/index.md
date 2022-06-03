@@ -17,17 +17,17 @@ weight: 10
 
 ---
 
-## Welcome to my blog
+## Why start a blog?
 
-As a technologist with a passion to explore unknown territories I have decided to share my journey as I deep dive into new and exciting topics (for me).
+As a technologist with a passion to explore unknown territories I have decided to share my journey as I deep dive into new and exciting topics (at least for me).
 
-> What can you expect?
+## What can you expect?
 
 Through my socials (or here on my portfolio/blog page) you can follow me as I will share interesting posts to the following series (as a start):
 
-- [Monthly Passion](../../tutorials/monthlypassion/_index.md)
+- [Monthly Passion](../../tutorials/monthlypassion/)
   - A series in where I deep dive into something I stumbled on that I have commited to learn and explore a given month
-- [What is {X}, and why you should {X} it](../../tutorials/whatisx/_index.md)
+- [What is {X}, and why you should {X} it](../../tutorials/whatisx/)
   - A series that involves sharing my findings on new technologies / topics I have stumbled on I think you should know about
 
 
@@ -47,7 +47,7 @@ else:
 
 How cool is that? It definetly turned me on. 
 
-Topics in which i will most likley write about includes:
+Topics in which I will most likely write about includes:
 
 - PySpark
 - Regex
@@ -62,4 +62,6 @@ Topics in which i will most likley write about includes:
 
 Do the nature of this being my first attempt to write material my ambitions to be overly active is quite small. However, I have a goal to start with at least 2 entries a month and scale up or down based on my time. 
 
-If you wish to follow my endevour as I write my thoughts and showq you some tips and tricks, then please follow my [LinkedIn](https://linkedin.com/in/oscar-dyremyhr/)
+If you wish to follow my endevour as I write my thoughts and show you some tips and tricks, then please follow my on [LinkedIn](https://linkedin.com/in/oscar-dyremyhr/)
+
+PLease leave a comment below if you have any questions or content I should write about 😊
