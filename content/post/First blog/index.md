@@ -1,6 +1,6 @@
 ---
 title: Welcome to my blog
-summary: An introduction to my blog
+summary: An introduction to my blog & what to come
 tags:
   - Intro
 date: 2022-01-01
@@ -8,6 +8,13 @@ ShowToc: true
 UseHugoToc: true
 TocOpen: true
 draft: false
+
+image:
+  filename: featured
+  focal_point: Smart
+  preview_only: false
+weight: 10
+
 ---
 
 ## Welcome to my blog
