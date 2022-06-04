@@ -1,3 +1,23 @@
+---
+title: Welcome to my blog
+summary: An introduction to my blog & what to come
+tags:
+  - Intro
+date: 2022-01-01
+ShowToc: true
+UseHugoToc: true
+TocOpen: true
+draft: true
+
+image:
+  filename: featured
+  focal_point: Smart
+  preview_only: false
+weight: 10
+
+---
+
+
 
 # Day 1 - House Price Prediction using Sci-Kit Learn
 

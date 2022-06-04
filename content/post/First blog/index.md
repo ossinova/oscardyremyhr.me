@@ -29,7 +29,7 @@ Through my socials (or here on my portfolio/blog page) you can follow me as I wi
   - A series in where I deep dive into something I stumbled on that I have commited to learn and explore a given month
 - [What is {X}, and why you should {X} it](../../tutorials/whatisx/)
   - A series that involves sharing my findings on new technologies / topics I have stumbled on I think you should know about
-  - See [What is Cron, why tou should know it](../../tutorials/whatisx/cron.md)
+  - See [What is Cron, why tou should know it](../../tutorials/whatisx/cron/)
 
 ## What sort of content will you focus on?
 
