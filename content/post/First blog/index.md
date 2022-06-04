@@ -45,7 +45,7 @@ else:
   print("Bye bye!")
 ```
 
-How cool is that? It definetly turned me on. 
+> How cool is that? It definetly turned me on. 
 
 Topics in which I will most likely write about includes:
 
@@ -60,8 +60,8 @@ Topics in which I will most likely write about includes:
 
 ## Blog schedule
 
-Do the nature of this being my first attempt to write material my ambitions to be overly active is quite small. However, I have a goal to start with at least 2 entries a month and scale up or down based on my time. 
+Due to the nature of this being my first attempt to write blog material my ambitions to be overly active is quite small. However, I have a goal to start with at least 2 entries a month and scale up or down based on my time. 
 
 If you wish to follow my endevour as I write my thoughts and show you some tips and tricks, then please follow my on [LinkedIn](https://linkedin.com/in/oscar-dyremyhr/)
 
-Please leave a comment below if you have any questions or content I should write about 😊
+Please leave a comment below if you have any questions, or have any thoughts on content I should write about 😊
