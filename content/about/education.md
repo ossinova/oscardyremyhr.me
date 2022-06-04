@@ -25,7 +25,7 @@ experience:
   - title: MSc Business Analytics
     company: BI Norwegian Business School
     company_url: ''
-    company_logo: BI
+    company_logo: BI2
     location: Oslo, Norway
     date_start: '2018-08-20'
     date_end: '2020-08-01'
