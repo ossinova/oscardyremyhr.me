@@ -31,7 +31,7 @@ Through my socials (or here on my portfolio/blog page) you can follow me as I wi
   - A series that involves sharing my findings on new technologies / topics I have stumbled on I think you should know about
   - See [What is Cron, and why you should know it](../../tutorials/whatisx/cron/)
 
-## What sort of content will you focus on?
+## What sort of content will I focus on?
 
 I see this blog as a forum for self growth, and so I envision my content will be rather technical. Luckily, my blog uses Markdown (I will post a entry regarding this soon! Stay tuned 👍). This allows me to do things such as this:
 
