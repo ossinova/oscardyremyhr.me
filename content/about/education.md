@@ -25,7 +25,7 @@ experience:
   - title: MSc Business Analytics
     company: BI Norwegian Business School
     company_url: ''
-    company_logo: org-x
+    company_logo: BI
     location: Oslo, Norway
     date_start: '2018-08-20'
     date_end: '2020-08-01'
@@ -36,7 +36,7 @@ experience:
   - title: BSc Information Science and Technolohy
     company: The Pennsylvania State University
     company_url: ''
-    company_logo: org-x
+    company_logo: PSU
     location: PA, USA
     date_start: '2013-01-01'
     date_end: '2017-05-31'
