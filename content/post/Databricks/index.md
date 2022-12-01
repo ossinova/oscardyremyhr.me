@@ -1,16 +1,20 @@
 ---
-title: The return of COBOL: Key takeaways from a newbie
-summary: 
+title: Test
+summary: An introduction to my blog & what to come
 tags:
   - Intro
-date: 2022-11-21T12:35:40.926Z
+date: 2022-01-01
 ShowToc: true
+UseHugoToc: true
+TocOpen: true
 draft: false
-featured: false
+
 image:
   filename: featured
   focal_point: Smart
   preview_only: false
+weight: 10
+
 ---
 
 

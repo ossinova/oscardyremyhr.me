@@ -1,5 +1,5 @@
 ---
-title: The return of COBOL: Key takeaways from a newbie
+title: "The return of COBOL: Key takeaways from a newbie"
 summary: 
 tags:
   - Intro
