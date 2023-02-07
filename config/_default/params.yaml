@@ -86,10 +86,10 @@ features:
     commento:
       url: ''
   giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+      repo: 'ossinova/oscardyremyhr.me'
+      repo_id: 'R_kgDOHNctjg'
+      category: 'Announcements'
+      category_id: 'DIC_kwDOHNctjs4CUDgW'
   search:
     provider: ''
     algolia:
