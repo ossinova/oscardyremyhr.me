@@ -58,6 +58,8 @@ locale:
 
 features:
   syntax_highlighter:
+    theme_light: github-light
+    theme_dark: github-dark
     enable: true
     extra_languages:
       - r
