@@ -59,7 +59,7 @@ locale:
 features:
   syntax_highlighter:
     theme_light: github-light
-    theme_dark: github-dark
+    theme_dark: dracula
     enable: true
     extra_languages:
       - r
@@ -85,6 +85,11 @@ features:
       show_count: true
     commento:
       url: ''
+  giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
   search:
     provider: ''
     algolia:
