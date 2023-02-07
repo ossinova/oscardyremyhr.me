@@ -85,11 +85,11 @@ features:
       show_count: true
     commento:
       url: ''
-  giscus:
-      repo: 'ossinova/oscardyremyhr.me'
-      repo_id: 'R_kgDOHNctjg'
-      category: 'Announcements'
-      category_id: 'DIC_kwDOHNctjs4CUDgW'
+    giscus:
+        repo: 'ossinova/oscardyremyhr.me'
+        repo_id: 'R_kgDOHNctjg'
+        category: 'Announcements'
+        category_id: 'DIC_kwDOHNctjs4CUDgW'
   search:
     provider: ''
     algolia:
