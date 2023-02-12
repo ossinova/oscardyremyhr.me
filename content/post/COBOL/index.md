@@ -13,20 +13,31 @@ image:
   preview_only: false
 ---
 
-# The return of COBOL: Takeaways from a newbie
-
 ## Introduction to COBOL
 
-I was ready for a new adventure. I had heard about the ***CO**mmon **B**usiness-**O**riented **L**anguage* aka [COBOL](https://en.wikipedia.org/wiki/COBOL), introduced over half a decade ago and its recent [resurection in demand](https://www.hackerrank.com/blog/the-inevitable-return-of-cobol/). I wanted to explore it further to see what it was all about as it’s not the most popular and liked language amongst programmers, being that it is extremely old with huge limitations compared to today’s modern languages... Yet, remarkably, although being more than 60 years old it is still alive and hidden in many huge legacy codebases in the form of spaghetti code. This is mainly as a result of companies not having the time nor the investments to do a complete code re-build and system re-design to migrate to something more elegant and modern like cloud computing. 
+I was ready for a new adventure. I had heard about the ***CO**mmon **B**usiness-**O**riented **L**anguage* aka [COBOL](https://en.wikipedia.org/wiki/COBOL), introduced over half a century ago and its recent [resurection in demand](https://www.hackerrank.com/blog/the-inevitable-return-of-cobol/). I wanted to explore it further to see what it was all about, as it’s not the most popular and liked language amongst programmers, being that it is extremely old with huge limitations compared to today’s modern languages... Yet, remarkably, although being more than 60+ years old it is still alive and hidden in many huge legacy codebases in the form of spaghetti code. This is mainly as a result of companies not having the time, investments and resources to do a complete code re-build and system re-design to migrate to something more elegant and modern like [cloud computing](https://www.nextgov.com/ideas/2021/04/cobol-cloud-dods-digital-journey/173356/). 
 
+<!---
 This is especially the case in the financial sector in where 95% of ATMs and 80% of all in-person credit card transaction done in the US rely on COBOL, [according to Reuters](http://fingfx.thomsonreuters.com/gfx/rngs/USA-BANKS-COBOL/010040KH18J/). With the demand for COBOL resurecting, but the supply off new developers being limited due to the aging and high avg. age of the COBOL devloper (mostly due to the language being so old and developers going out in retirement) a recent push has been made to keep these legacy systems afloat. Such as IBM having started offering a free [COBOL Course.](https://www.ibm.com/blogs/ibm-training/free-course-announcing-learning-cobol-programming-with-vscode/)
+--->
 
 
-![COBOL meme](https://www.hackerrank.com/blog/wp-content/uploads/the-COBOL-skill-gap.jpg)
+![COBOL Skill Gap](https://www.hackerrank.com/blog/wp-content/uploads/the-COBOL-skill-gap.jpg) |
+|:--:|
+| <b>The COBOL Skill Gap</b>|
+
+This is especially the case within many of todays main business applications and services. An interesting article by [Hackerrank](https://www.hackerrank.com/blog/the-inevitable-return-of-cobol/), states that:
+> COBOL is written for mainframes created 10 years before man walked on the moon. Those same mainframes still operate some of the biggest institutionalized computing today. If someone pulled the plug on COBOL, millions of businesses worldwide would suffer from malfunctioning machines. This old programming language is a bit of a taboo today, but it’s important to recognize just how big of an impact COBOL still has on our day-to-day.
+
+Here is the following breakdown of systems running on COBOL:
+
+![](https://www.hackerrank.com/blog/wp-content/uploads/biggest-systems-that-run-on-COBOL.jpg)
+
+# My learning path
 
 If you are unfamiliar with COBOL and its history a good place to start is by watching this [brief introduction in 100 seconds](https://www.youtube.com/watch?v=7d7-etf-wNI). **Notice the mockery!**
 
-While I have no intention any time soon on managing complex legacy code from half a century ago, I am still curious as to how the technology and systems was built back in the days and how it has changed since. That is why I decided to take the IBM course so you didn't have to, and share my thoughts and takeaways, with gracious help from Derek Banas and his Youtube Tutorial: 
+While I have no intention any time soon on managing complex legacy code from half a century ago, I am still curious as to how the technology and systems was built back in the days and how it has changed since. That is why I decided to learn its fundamentals with gracious help from Derek Banas and his Youtube Tutorial: 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TBs7HXI76yU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -54,63 +65,45 @@ console.log('Hello World')
 000008     STOP RUN.
 ```
 
-On first glance, one can clearly see the difference betweeen the modern laguages (Python and JS) compared to the old school (COBOL). What is interesting here are the line numbers and the indentation, as COBOL back in the day was written on actual physical punch cards! Additionally, the program is organized in four DIVISIONS; IDENTIFICATION, ENVIRONMENT, DATA and PROCEDURE. The IDENTIFICATION DIVISION in which identifies the program being the mandatory one to include in each program. 
+On first glance, one can clearly see the difference betweeen the modern laguages (Python and JS) compared to the old school (COBOL). What is interesting here are the line numbers and the indentation, as COBOL back in the day was written on actual physical punch cards! It is also worth pointing out that COBOL is very verbose and english like in nature, similar to that of SQL. Additionally, the program is organized in four DIVISIONS; IDENTIFICATION, ENVIRONMENT, DATA and PROCEDURE. The IDENTIFICATION DIVISION in which identifies the program being the mandatory one to include in each program. 
 
 ### COBOL sctructure
 A COBOL program follows this [structure](https://www.mainframestechhelp.com/tutorials/cobol/program-structure.htm):
 
-```mermaid
-erDiagram
-    CAR ||--o{ NAMED-DRIVER : allows
-    CAR {
-        string registrationNumber
-        string make
-        string model
-    }
-    PERSON ||--o{ NAMED-DRIVER : is
-    PERSON {
-        string firstName
-        string lastName
-        int age
-    }
-```
-- Divisions
-  - Sections
-    - Paragraphs
-      - Sentences
-        - Statements
-          - Characters
 
-### Data types
+  > Divisions
+  > > Sections
+  > > > Paragraphs
+  > > > > Sentences
+  > > > > > Statements
+  > > > > > > Characters
+
+### Data types and variables
 
 COBOL mainly has 5 [data types](https://www.mainframestechhelp.com/tutorials/cobol/data-types.htm):
 
-- Numeric
-  - Declare uisng 9
-- Alphabet
-  - Decalre using A
-- Alpha-numeric
-  - Declare using X
-- Sign
-  - Declare using S
-- Decimal point
-  - Declare using P/V
+- Numeric: Declare uisng 9
+- Alphabet: Decalre using A
+- Alpha-numeric: Declare using X
+- Sign: Declare using S
+- Decimal point: Declare using P or V
 
 Examples:
 
+```COBOL
+01 WS_NUM PIC 9(3) *> Numeeric value (0-9) with 3 digits
+01 WS_APLHA PIC A(3) *> Alphabet (A-Z, a-z, special characters) with 3 characters
+01 WS_ALPHA_NUM PIC X(3) *> Alpha-numeric (A-Z, a-z, 0-9, special charcters) with 3 characters
+01 WS_SIGNED_NUM PIC S9(3) *> Signed numeric value (-123) with 3 digits
+01 WS_TOTAL PIC 9(3)V9(2) *> Numeric value with 3 digits, and 2 decimal points
 ```
-9(3) - Numeeric value (0-9) with 3 digits
-A(3) - Alphabet (A-Z, a-z, special characters) with 3 characters
-X(3) - Alpha-numeric (A-Z, a-z, 0-9, special charcters)
-S9(3) - Signed numeric value with 3 digits
-9(3)V9(2) - Numeric value with 3 digits, and 2 decimal points
-```
-### Defining a variable
+The `PICTURE` or `PIC` clause describes the characteristics of the variable (i.e variable type and length).
 
-Going forward, I will use >> SOURCE FROMAT FREE to write COBOL in free format. I will also avoid typing the sequence numbers as it is not necessary to compile. 
+### Creating a program
 
-`PICTURE` or `PIC` clause describes the characteristics of the variable.
-`VALUE` describes the literal value the variable should be initialized with.
+Going forward, I will use >> SOURCE FORMAT FREE to write COBOL in free format. I will also avoid typing the sequence numbers as it is not necessary to compile. 
+
+The `VALUE` keyword describes the literal value the variable should be initialized with.
 
 Example program:
 
@@ -119,7 +112,7 @@ Example program:
 
 IDENTIFICATION DIVISION.
 *> Identification -> Program information
-PROGRAM-ID. hello.
+PROGRAM-ID. FirstProgram.
 AUTHOR.  Oscar Dyremyhr
 
 ENVIRONMENT DIVISION.
@@ -135,7 +128,7 @@ WORKING-STORAGE SECTION.
 01 DecNum PIC 9(4)V9(2) VALUE 2022.00. *> Variable (Decimal)
 
 PROCEDURE DIVISION.
-*> Procdure -> Execution plan
+*> Proceedure -> Execution plan
 DISPLAY "My name is: " MyName.
 DISPLAY "My age is: " MyAge.
 DISPLAY "The year is: " Year.
@@ -145,13 +138,15 @@ STOP RUN.
 
  ```
 
-Output:
-
-![image](../../../assets/media/images/cobol_output.png)
 
 
+![image](../../../assets/media/images/cobol_output.png) | 
+|:--:|
+| <b>Output</b>|
 
-Despite its flaws, COBOL remains an easy language to learn and read, since it targets non-technical people ("Business people") by using English-like statements similar to that of SQL. It’s extremely stable and precise, thus its longevity. However, this is also why many people hait it. Critizing it for irs verbosity, and design process.
+
+
+Despite its flaws, COBOL remains an easy language to learn and read, since it targets non-technical people ("Business people") by using English-like statements similar to that of SQL. It’s extremely stable and precise, thus its longevity. However, this is also why many people hait it. Critizing it for its verbosity, and design process.
 
 ## How to setup a COBOL environment
 
@@ -160,22 +155,20 @@ If you want to mess with COBOL, you can write your program in a popular IDLE edi
 Derek Banas video and [this blog post for windows](https://www.it-cooking.com/projects/how-to-install-gnucobol-for-cygwin/) or [this one for Mac](https://www.geeksforgeeks.org/how-to-install-cobol-on-macos/) contain a step-by-step installation guide. I’ll leave you to them if you are really willing to follow my path, as I want to keep the post lightweight. 
 
 In short, in order for it to compile on my Mac I had to do the following:
-- Install VScode and COBOL exteension
+- Install VScode and COBOL extension
 - Install Brew
 - Install gnu-cobol using Brew
 
 Ran `cobc -x program_name.cob` in the terminnal on the same directory the COBOL file was located. This creates an executable you can either launch or run in the terminal using `./program_name`
 
 ## What I did
-I mostly messed around with COBOL’s basic commands, created some tables, an interactive menu, performed calculations and logical operations. 
-
-You can find a folder with my experiments [here](https://github.com/mutt0-ds/cobol-experiments), most of them are taken from the Derek Banas tutorial. 
-
-After having coded a bit, I tackled [IBM’s course](https://www.ibm.com/blogs/ibm-training/free-course-announcing-learning-cobol-programming-with-vscode/), which is not very long (16 hours, in theory, it took me way less to finish it because I already knew the basics) and adds some details about the different parts of a COBOL program, the differences between some versions and some simple patterns. 
+mmm
 
 ## My takeaways
-- With COBOL, creating long spaghetti code is extremely easy and often unavoidable. It’s not an OOP, all the variables are global, loops and functions are extremely verbose, and importing other modules is not so easy.
-
+- With COBOL, creating long spaghetti code is extremely easy and often unavoidable. 
+- The program is divided and organized in several sections, for example for defining the data, the environment, the variables and then the process.
+- Variables needs to be defined in advance in the WORKING-STORAGE SECTION, and described with a PIC clause that is global. This means that if a value or string is longer / shorter than the predefined assignment it will truncate / add spaces to it. 
+- 
 ---
 
 
