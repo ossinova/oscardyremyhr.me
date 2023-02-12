@@ -120,15 +120,6 @@ body {
   div.highlight {
       position: relative;
   }
-  
-  
-  div.highlight:hover .copy-code,
-  pre:hover .copy-code {
-    display: block;
-  }
-
-
-
 
 .btn-copy-code {
     position: absolute;
@@ -157,3 +148,11 @@ body {
     right: 4px;
     user-select: none;
   }
+
+div.highlight:hover .btn-copy-code,
+pre:hover .btn-copy-code {
+    color: #222225;
+    background-color: #b3b3b3;
+    opacity: 0.8;
+    display: block;
+}
