@@ -29,7 +29,11 @@ experience:
     date_start: '2021-12-01'
     date_end: ''
     description: |2-
-      Consulting on a project involving building a seamless data platform. Data Engineering tasks consisting of buoilding a delta lake using Azure Data Factory and Databrick.
+      Consulting on a project involving building a seamless data platform. Data Engineering tasks consisting of building a delta lake using Azure Data Factory and Databricks.
+
+      * Crated dynamic and modularized notebooks using PySpark
+      * Incorporated medallion architecture and Unity Catalog 
+      * Created orchestration pipelines in ADF 
     
   - title: Junior Data Engineer
     company: HeltHjem
@@ -55,11 +59,7 @@ experience:
     date_start: '2020-08-01'
     date_end: '2020-11-01'
     description: |2-
-      Responsibilities include:
-
-      * Analysing
-      * Modelling
-      * Deploying
+      Created tech related MVP's based on feedback from employees ranging from automated scripting of file dwonloads to a website tracking packages. 
 
 design:
   columns: '1'

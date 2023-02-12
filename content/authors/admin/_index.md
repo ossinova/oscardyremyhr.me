@@ -56,6 +56,7 @@ Oscar Dyremyhr is a Insights & Data Consultant @ Capgemini. He holds a MSc in Bu
 
 Interests:
 - Data Engineering
+- Cloud Architecture
 - Machine Learning
 - Artificial Intelligence
 - Automation/Scripting

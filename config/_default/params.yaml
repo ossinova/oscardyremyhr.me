@@ -79,12 +79,6 @@ features:
     gravatar: false
     shape: circle
   comment:
-    provider: ''
-    disqus:
-      shortname: ''
-      show_count: true
-    commento:
-      url: ''
     giscus:
         repo: 'ossinova/oscardyremyhr.me'
         repo_id: 'R_kgDOHNctjg'
