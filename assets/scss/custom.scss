@@ -122,32 +122,6 @@ body {
   }
   
   
-  .copy-code {
-      background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
-      border: 0;
-      color: #FFFFFF;
-      cursor: pointer;
-      font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 2.5;
-      outline: transparent;
-      text-align: center;
-      text-decoration: none;
-      transition: box-shadow .2s ease-in-out;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      white-space: nowrap;
-      display: none;
-      position: absolute;
-      top: 4px;
-      right: 4px;
-      border-radius: var(--radius);
-      padding: 0 5px;
-      user-select: none;
-  }
-  
-  
   div.highlight:hover .copy-code,
   pre:hover .copy-code {
     display: block;
@@ -157,18 +131,27 @@ body {
 
 
 .btn-copy-code {
-    display: none;
-    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2.5;
-    outline: transparent;
-    text-align: center;
-    text-decoration: none;
-    transition: box-shadow .2s ease-in-out;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    width: 65px;
+    color: #232326;
+    background-color: #7f7f7f;
+    border: 1.25px solid #232326;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 4px;
     white-space: nowrap;
+    padding: 4px 4px 5px 4px;
+    margin: 0 0 0 1px;
+    cursor: pointer;
+    opacity: 0.6;
     position: absolute;
     top: 4px;
     right: 4px;
