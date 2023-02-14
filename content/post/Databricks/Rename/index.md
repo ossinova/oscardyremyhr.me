@@ -30,7 +30,7 @@ Often multiple renames are required. In this demo I will walk through a few opti
 Lets first create some dummy data
 
 
-```
+```python
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 
 data = [("James","","Smith","36636","M",3000),
@@ -86,7 +86,7 @@ There are numerous ways do so, some more suitable for more columns. I have liste
 - Quick and easy for one or more columns. Tedious for multiple.
 
 
-```
+```python
 df_renamed_opt1 = (df
                    .withColumnRenamed('fname', 'FirstName')
                    .withColumnRenamed('mname', 'MiddleName')
@@ -134,7 +134,7 @@ df_renamed_opt1.explain()
 - Great for a list of columns
 
 
-```
+```python
 from pyspark.sql.functions import col
 
 mapping = dict(zip(['fname', 'mname', 'lname', 'id', 'gen', 'sal'], # keys: original col(s) name
@@ -181,7 +181,7 @@ df_renamed_opt2a.explain()
 - Great for multiple columns. Readable.
 
 
-```
+```python
 mapping = {
     #'original' : 'renamed',
     'fname' : 'FirstName',
@@ -216,7 +216,7 @@ df_renamed_opt2b.explain()
   th {
     text-align: left;
   }
-</style><div class='table-result-container'><table class='table-result'><thead style='background-color: white'><tr><th>FirstName</th><th>MiddleName</th><th>LastName</th><th>ID</th><th>Gender</th><th>Salary</th></tr></thead><tbody><tr><td>James</td><td></td><td>Smith</td><td>36636</td><td>M</td><td>3000</td></tr><tr><td>Michael</td><td>Rose</td><td></td><td>40288</td><td>M</td><td>4000</td></tr><tr><td>Robert</td><td></td><td>Williams</td><td>42114</td><td>M</td><td>4000</td></tr><tr><td>Maria</td><td>Anne</td><td>Jones</td><td>39192</td><td>F</td><td>4000</td></tr><tr><td>Jen</td><td>Mary</td><td>Brown</td><td></td><td>F</td><td>-1</td></tr></tbody></table></div>
+</style><div class='table-result-container'><table class='table-result'><thead class='table-result-header'><tr><th>FirstName</th><th>MiddleName</th><th>LastName</th><th>ID</th><th>Gender</th><th>Salary</th></tr></thead><tbody><tr><td>James</td><td></td><td>Smith</td><td>36636</td><td>M</td><td>3000</td></tr><tr><td>Michael</td><td>Rose</td><td></td><td>40288</td><td>M</td><td>4000</td></tr><tr><td>Robert</td><td></td><td>Williams</td><td>42114</td><td>M</td><td>4000</td></tr><tr><td>Maria</td><td>Anne</td><td>Jones</td><td>39192</td><td>F</td><td>4000</td></tr><tr><td>Jen</td><td>Mary</td><td>Brown</td><td></td><td>F</td><td>-1</td></tr></tbody></table></div>
 
 
 
@@ -238,7 +238,7 @@ df.select([col(c).alias(mapping[c]) for c in mapping])
 If you are familiar with SQL you can query the data with the appropriate renaming of the columns.
 
 
-```
+```python
 # Create a temp view to query against
 df.createOrReplaceTempView('employees')
 
@@ -268,6 +268,10 @@ df_renamed_opt3a.explain()
   .table-result-container {
     max-height: 300px;
     overflow: auto;
+  }
+  .table-result-head {
+    background-color: black;
+    text-color: white;
   }
   table, th, td {
     border: 1px solid black;
