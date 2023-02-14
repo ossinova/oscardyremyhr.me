@@ -226,7 +226,7 @@ df_renamed_opt2b.explain()
     
 
 
-Note: df.columns assumes all columns. You can do select only on the specified columns in the zipped list or dictionary mapping by using this instead:
+Note: df.columns assumes all columns from the dataframe. You can do select only on the specified columns in the zipped list or dictionary mapping by using this instead:
 ```python
 df.select([col(c).alias(mapping[c]) for c in mapping])
 ```
