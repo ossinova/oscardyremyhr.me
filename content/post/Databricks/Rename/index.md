@@ -1,3 +1,23 @@
+---
+title: Renaming Multiple Columns
+summary: An introduction to different strategies for renaming multiple columns using PySpark
+tags:
+  - Intro
+  - Databricks
+  - PySpark
+date: 2023-02-14
+ShowToc: true
+UseHugoToc: true
+TocOpen: true
+draft: false
+
+image:
+  filename: featured
+  focal_point: Smart
+  preview_only: false
+weight: 10
+
+---
 
 
 # Renaming multiple columns in Databricks using PySpark
