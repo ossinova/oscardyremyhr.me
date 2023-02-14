@@ -68,7 +68,7 @@ display(df)
   th {
     text-align: left;
   }
-</style><div class='table-result-container'><table class='table-result'><thead style='background-color: white'><tr><th>fname</th><th>mname</th><th>lname</th><th>id</th><th>gen</th><th>sal</th></tr></thead><tbody><tr><td>James</td><td></td><td>Smith</td><td>36636</td><td>M</td><td>3000</td></tr><tr><td>Michael</td><td>Rose</td><td></td><td>40288</td><td>M</td><td>4000</td></tr><tr><td>Robert</td><td></td><td>Williams</td><td>42114</td><td>M</td><td>4000</td></tr><tr><td>Maria</td><td>Anne</td><td>Jones</td><td>39192</td><td>F</td><td>4000</td></tr><tr><td>Jen</td><td>Mary</td><td>Brown</td><td></td><td>F</td><td>-1</td></tr></tbody></table></div>
+</style><div class='table-result-container'><table class='table-result'><thead style='background-color: black'><tr><th>fname</th><th>mname</th><th>lname</th><th>id</th><th>gen</th><th>sal</th></tr></thead><tbody><tr><td>James</td><td></td><td>Smith</td><td>36636</td><td>M</td><td>3000</td></tr><tr><td>Michael</td><td>Rose</td><td></td><td>40288</td><td>M</td><td>4000</td></tr><tr><td>Robert</td><td></td><td>Williams</td><td>42114</td><td>M</td><td>4000</td></tr><tr><td>Maria</td><td>Anne</td><td>Jones</td><td>39192</td><td>F</td><td>4000</td></tr><tr><td>Jen</td><td>Mary</td><td>Brown</td><td></td><td>F</td><td>-1</td></tr></tbody></table></div>
 
 
 Assuming you want to rename the following columns:
