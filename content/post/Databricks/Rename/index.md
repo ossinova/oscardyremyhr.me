@@ -1,5 +1,5 @@
 ---
-title: Renaming Multiple Columns
+title: Renaming Multiple Columns using PySpark
 summary: An introduction to different strategies for renaming multiple columns using PySpark
 tags:
   - Intro
@@ -19,11 +19,9 @@ weight: 10
 
 ---
 
+As a Data Engineer, a common task is to rename columns from the source system into more clear and readable names. Often multiple renames are required. In this demo I will walk through a few options that aim to solve this.
 
-# Renaming multiple columns in Databricks using PySpark
-
-As a Data Engineer, a common task is to rename columns from the source system into more clear and readable names.  
-Often multiple renames are required. In this demo I will walk through a few options that aim to solve this.
+{{toc}}
 
 ## Creating demo data
 
