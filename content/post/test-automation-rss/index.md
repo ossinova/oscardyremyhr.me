@@ -1,6 +1,6 @@
 ---
 title: Test automation - RSS
-date: 2023-02-15T20:23:27.988Z
+date: 2023-02-15T20:31:54.607Z
 draft: false
 featured: false
 image:
