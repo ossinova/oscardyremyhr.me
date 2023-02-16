@@ -21,7 +21,7 @@ abstract: >-
 location: Oslo, Norway
 date: 2023-01-15T07:00:20.906Z
 date_end: 2023-01-14T23:00:00.000Z
-all_day: false
+all_day: true
 event: xChange 2023
 event_url: None
 publishDate: 2022-12-01T14:13:20.924Z
