@@ -1,6 +1,6 @@
 ---
 title: Databricks + Black
-url: https://oscardyremyhr.me/post/Databricks/black
+url: Databricks/Black
 summary: An introduction to using Black with Databricks
 tags:
   - Intro
