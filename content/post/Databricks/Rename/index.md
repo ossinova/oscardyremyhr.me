@@ -9,7 +9,7 @@ date: 2023-02-14
 ShowToc: true
 UseHugoToc: true
 TocOpen: true
-draft: false
+draft: true
 
 image:
   filename: featured
