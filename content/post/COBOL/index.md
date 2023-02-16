@@ -13,8 +13,6 @@ image:
   preview_only: false
 ---
 
-# The return of COBOL: Takeaways from a newbie
-
 ## Introduction to COBOL
 
 I was ready for a new adventure. I had heard about the ***CO**mmon **B**usiness-**O**riented **L**anguage* aka [COBOL](https://en.wikipedia.org/wiki/COBOL), introduced over half a decade ago and its recent [resurection in demand](https://www.hackerrank.com/blog/the-inevitable-return-of-cobol/). I wanted to explore it further to see what it was all about as it’s not the most popular and liked language amongst programmers, being that it is extremely old with huge limitations compared to today’s modern languages... Yet, remarkably, although being more than 60 years old it is still alive and hidden in many huge legacy codebases in the form of spaghetti code. This is mainly as a result of companies not having the time nor the investments to do a complete code re-build and system re-design to migrate to something more elegant and modern like cloud computing. 
