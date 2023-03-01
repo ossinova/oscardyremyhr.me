@@ -12,13 +12,11 @@ image:
   focal_point: Smart
   preview_only: false
 ---
-
 ## Introduction to COBOL
 
-I was ready for a new adventure. I had heard about the ***CO**mmon **B**usiness-**O**riented **L**anguage* aka [COBOL](https://en.wikipedia.org/wiki/COBOL), introduced over half a decade ago and its recent [resurection in demand](https://www.hackerrank.com/blog/the-inevitable-return-of-cobol/). I wanted to explore it further to see what it was all about as it’s not the most popular and liked language amongst programmers, being that it is extremely old with huge limitations compared to today’s modern languages... Yet, remarkably, although being more than 60 years old it is still alive and hidden in many huge legacy codebases in the form of spaghetti code. This is mainly as a result of companies not having the time nor the investments to do a complete code re-build and system re-design to migrate to something more elegant and modern like cloud computing. 
+I was ready for a new adventure. I had heard about the **\*CO**mmon **B**usiness-**O**riented **L**anguage* aka [COBOL](https://en.wikipedia.org/wiki/COBOL), introduced over half a decade ago and its recent [resurection in demand](https://www.hackerrank.com/blog/the-inevitable-return-of-cobol/). I wanted to explore it further to see what it was all about as it’s not the most popular and liked language amongst programmers, being that it is extremely old with huge limitations compared to today’s modern languages... Yet, remarkably, although being more than 60 years old it is still alive and hidden in many huge legacy codebases in the form of spaghetti code. This is mainly as a result of companies not having the time nor the investments to do a complete code re-build and system re-design to migrate to something more elegant and modern like cloud computing. 
 
 This is especially the case in the financial sector in where 95% of ATMs and 80% of all in-person credit card transaction done in the US rely on COBOL, [according to Reuters](http://fingfx.thomsonreuters.com/gfx/rngs/USA-BANKS-COBOL/010040KH18J/). With the demand for COBOL resurecting, but the supply off new developers being limited due to the aging and high avg. age of the COBOL devloper (mostly due to the language being so old and developers going out in retirement) a recent push has been made to keep these legacy systems afloat. Such as IBM having started offering a free [COBOL Course.](https://www.ibm.com/blogs/ibm-training/free-course-announcing-learning-cobol-programming-with-vscode/)
-
 
 ![COBOL meme](https://www.hackerrank.com/blog/wp-content/uploads/the-COBOL-skill-gap.jpg)
 
@@ -29,8 +27,6 @@ While I have no intention any time soon on managing complex legacy code from hal
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TBs7HXI76yU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The basics of COBOL
-
-
 
 Let's compare the basics of printing “Hello World” in Python, JS, and COBOL:
 
@@ -55,54 +51,51 @@ console.log('Hello World')
 On first glance, one can clearly see the difference betweeen the modern laguages (Python and JS) compared to the old school (COBOL). What is interesting here are the line numbers and the indentation, as COBOL back in the day was written on actual physical punch cards! Additionally, the program is organized in four DIVISIONS; IDENTIFICATION, ENVIRONMENT, DATA and PROCEDURE. The IDENTIFICATION DIVISION in which identifies the program being the mandatory one to include in each program. 
 
 ### COBOL sctructure
+
 A COBOL program follows this [structure](https://www.mainframestechhelp.com/tutorials/cobol/program-structure.htm):
 
-```mermaid
-erDiagram
-    CAR ||--o{ NAMED-DRIVER : allows
-    CAR {
-        string registrationNumber
-        string make
-        string model
-    }
-    PERSON ||--o{ NAMED-DRIVER : is
-    PERSON {
-        string firstName
-        string lastName
-        int age
-    }
-```
-- Divisions
-  - Sections
-    - Paragraphs
-      - Sentences
-        - Statements
-          - Characters
+* Divisions
+
+  * Sections
+
+    * Paragraphs
+
+      * Sentences
+
+        * Statements
+
+          * Characters
 
 ### Data types
 
 COBOL mainly has 5 [data types](https://www.mainframestechhelp.com/tutorials/cobol/data-types.htm):
 
-- Numeric
-  - Declare uisng 9
-- Alphabet
-  - Decalre using A
-- Alpha-numeric
-  - Declare using X
-- Sign
-  - Declare using S
-- Decimal point
-  - Declare using P/V
+* Numeric
+
+  * Declare uisng 9
+* Alphabet
+
+  * Declare using A
+* Alpha-numeric
+
+  * Declare using X
+* Sign
+
+  * Declare using S
+* Decimal point
+
+  * Declare using P/V
 
 Examples:
 
 ```
 9(3) - Numeeric value (0-9) with 3 digits
 A(3) - Alphabet (A-Z, a-z, special characters) with 3 characters
-X(3) - Alpha-numeric (A-Z, a-z, 0-9, special charcters)
-S9(3) - Signed numeric value with 3 digits
+X(3) - Alpha-numeric (A-Z, a-z, 0-9, special characters) with 3 characters
+S9(3) - Signed numeric value (+, -) with 3 digits
 9(3)V9(2) - Numeric value with 3 digits, and 2 decimal points
 ```
+
 ### Defining a variable
 
 Going forward, I will use >> SOURCE FROMAT FREE to write COBOL in free format. I will also avoid typing the sequence numbers as it is not necessary to compile. 
@@ -112,8 +105,8 @@ Going forward, I will use >> SOURCE FROMAT FREE to write COBOL in free format. I
 
 Example program:
 
- ```COBOL
-       >> SOURCE FORMAT FREE
+```COBOL
+      >> SOURCE FORMAT FREE
 
 IDENTIFICATION DIVISION.
 *> Identification -> Program information
@@ -140,14 +133,11 @@ DISPLAY "The year is: " Year.
 DISPLAY "Sign var: " SignNum.
 DISPLAY "Decimal var: " DecNum.
 STOP RUN.
-
- ```
+```
 
 Output:
 
 ![image](../../../assets/media/images/cobol_output.png)
-
-
 
 Despite its flaws, COBOL remains an easy language to learn and read, since it targets non-technical people ("Business people") by using English-like statements similar to that of SQL. It’s extremely stable and precise, thus its longevity. However, this is also why many people hait it. Critizing it for irs verbosity, and design process.
 
@@ -158,13 +148,15 @@ If you want to mess with COBOL, you can write your program in a popular IDLE edi
 Derek Banas video and [this blog post for windows](https://www.it-cooking.com/projects/how-to-install-gnucobol-for-cygwin/) or [this one for Mac](https://www.geeksforgeeks.org/how-to-install-cobol-on-macos/) contain a step-by-step installation guide. I’ll leave you to them if you are really willing to follow my path, as I want to keep the post lightweight. 
 
 In short, in order for it to compile on my Mac I had to do the following:
-- Install VScode and COBOL exteension
-- Install Brew
-- Install gnu-cobol using Brew
+
+* Install VScode and COBOL exteension
+* Install Brew
+* Install gnu-cobol using Brew
 
 Ran `cobc -x program_name.cob` in the terminnal on the same directory the COBOL file was located. This creates an executable you can either launch or run in the terminal using `./program_name`
 
 ## What I did
+
 I mostly messed around with COBOL’s basic commands, created some tables, an interactive menu, performed calculations and logical operations. 
 
 You can find a folder with my experiments [here](https://github.com/mutt0-ds/cobol-experiments), most of them are taken from the Derek Banas tutorial. 
@@ -172,19 +164,20 @@ You can find a folder with my experiments [here](https://github.com/mutt0-ds/cob
 After having coded a bit, I tackled [IBM’s course](https://www.ibm.com/blogs/ibm-training/free-course-announcing-learning-cobol-programming-with-vscode/), which is not very long (16 hours, in theory, it took me way less to finish it because I already knew the basics) and adds some details about the different parts of a COBOL program, the differences between some versions and some simple patterns. 
 
 ## My takeaways
-- With COBOL, creating long spaghetti code is extremely easy and often unavoidable. It’s not an OOP, all the variables are global, loops and functions are extremely verbose, and importing other modules is not so easy.
 
----
+* With COBOL, creating long spaghetti code is extremely easy and often unavoidable. It’s not an OOP, all the variables are global, loops and functions are extremely verbose, and importing other modules is not so easy.
 
+- - -
 
-- It’s also very clear and stable, and a non-technical person can easily read the code and figure out what it does.
-- I can see why COBOL has been the standard for ATMs all over the world: it’s very powerful for making calculations, building reports and simple interactive menus to display on the terminal as an ATM does. 
-- There are several sections, for example for defining the data, the environment, the variables and then the process.
-- The most annoying detail for me is that you have to define in advance (in the WORKING-STORAGE SECTION) the type and the size of the global variables you are going to use. If, for example, a string is longer than the N characters you’ve assigned to its variable, well screw you, it will be truncated. If it’s shorter, then COBOL will add a bunch of spaces before it.
-- Also, arrays start at 1. So weird!
-- The stability and the rigidity of the language are evident, I can see why it’s so difficult to replace without adding bugs, especially on mathematical operations.
+* It’s also very clear and stable, and a non-technical person can easily read the code and figure out what it does.
+* I can see why COBOL has been the standard for ATMs all over the world: it’s very powerful for making calculations, building reports and simple interactive menus to display on the terminal as an ATM does. 
+* There are several sections, for example for defining the data, the environment, the variables and then the process.
+* The most annoying detail for me is that you have to define in advance (in the WORKING-STORAGE SECTION) the type and the size of the global variables you are going to use. If, for example, a string is longer than the N characters you’ve assigned to its variable, well screw you, it will be truncated. If it’s shorter, then COBOL will add a bunch of spaces before it.
+* Also, arrays start at 1. So weird!
+* The stability and the rigidity of the language are evident, I can see why it’s so difficult to replace without adding bugs, especially on mathematical operations.
 
 ## What have I learned?
+
 Studying COBOL has certainly opened my eyes to how much technology has evolved during the years, but at the same time, I am fascinated by how this 63-year-old creature has kept many similarities to today’s stacks, for example with IF and SWITCH statements, tables, and functions. The basics are always the same. 
 
 I don’t recommend IBM’s course, verbose and not very intuitive (unless you want the certification?), while Derek’s tutorial helped in getting my hands dirty and with the setup.
