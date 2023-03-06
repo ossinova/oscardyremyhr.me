@@ -1,27 +1,28 @@
 ---
 title: Renaming Multiple Columns using PySpark
-summary: An introduction to different strategies for renaming multiple columns using PySpark
+subtitle: Strategies for effectively renaming multiple columns using PySpark and
+  Databricks
+date: 2023-03-03T09:44:21.879Z
+summary: An introduction to different strategies for renaming multiple columns
+  using PySpark
+draft: false
+authors:
+  - Admin
+ShowToc: true
+UseHugoToc: true
+TocOpen: true
+weight: 10
 tags:
   - Intro
   - Databricks
   - PySpark
-date: 2023-03-03
-ShowToc: true
-UseHugoToc: true
-TocOpen: true
-draft: true
-
 image:
   filename: featured
   focal_point: Smart
   preview_only: false
-weight: 10
-
 ---
 
 As a Data Engineer, a common task is to rename columns from the source system into more clear and readable names. Often multiple renames are required. In this demo I will walk through a few options that aim to solve this.
-
-{{toc}}
 
 ## Creating demo data
 
@@ -167,14 +168,6 @@ df_renamed_opt2a.explain()
 
 
 
-    == Physical Plan ==
-    *(1) Project [fname#525 AS FirstName#740, mname#526 AS MiddleName#741, lname#527 AS LastName#742, id#528 AS ID#743, gen#529 AS Gender#744, sal#530 AS Salary#745]
-    +- *(1) Scan ExistingRDD[fname#525,mname#526,lname#527,id#528,gen#529,sal#530]
-    
-    
-    
-
-
 **Option 2.b)** Using a dictionary
 - Great for multiple columns. Readable.
 
@@ -215,15 +208,6 @@ df_renamed_opt2b.explain()
     text-align: left;
   }
 </style><div class='table-result-container'><table class='table-result'><thead class='table-result-head'><tr><th>FirstName</th><th>MiddleName</th><th>LastName</th><th>ID</th><th>Gender</th><th>Salary</th></tr></thead><tbody><tr><td>James</td><td></td><td>Smith</td><td>36636</td><td>M</td><td>3000</td></tr><tr><td>Michael</td><td>Rose</td><td></td><td>40288</td><td>M</td><td>4000</td></tr><tr><td>Robert</td><td></td><td>Williams</td><td>42114</td><td>M</td><td>4000</td></tr><tr><td>Maria</td><td>Anne</td><td>Jones</td><td>39192</td><td>F</td><td>4000</td></tr><tr><td>Jen</td><td>Mary</td><td>Brown</td><td></td><td>F</td><td>-1</td></tr></tbody></table></div>
-
-
-
-    == Physical Plan ==
-    *(1) Project [fname#132 AS FirstName#384, mname#133 AS MiddleName#385, lname#134 AS LastName#386, id#135 AS ID#387, gen#136 AS Gender#388, sal#137 AS Salary#389]
-    +- *(1) Scan ExistingRDD[fname#132,mname#133,lname#134,id#135,gen#136,sal#137]
-    
-    
-    
 
 
 Note: df.columns assumes all columns from the dataframe. You can do select only on the specified columns in the zipped list or dictionary mapping by using this instead:
@@ -282,12 +266,6 @@ df_renamed_opt3a.explain()
     text-align: left;
   }
 </style><div class='table-result-container'><table class='table-result'><thead class='table-result-head'><tr><th>FirstName</th><th>MiddleName</th><th>LastName</th><th>ID</th><th>Gender</th><th>Salary</th></tr></thead><tbody><tr><td>James</td><td></td><td>Smith</td><td>36636</td><td>M</td><td>3000</td></tr><tr><td>Michael</td><td>Rose</td><td></td><td>40288</td><td>M</td><td>4000</td></tr><tr><td>Robert</td><td></td><td>Williams</td><td>42114</td><td>M</td><td>4000</td></tr><tr><td>Maria</td><td>Anne</td><td>Jones</td><td>39192</td><td>F</td><td>4000</td></tr><tr><td>Jen</td><td>Mary</td><td>Brown</td><td></td><td>F</td><td>-1</td></tr></tbody></table></div>
-
-
-
-    == Physical Plan ==
-    *(1) Project [fname#132 AS FirstName#500, mname#133 AS MiddleName#501, lname#134 AS LastName#502, id#135 AS ID#503, gen#136 AS Gender#504, sal#137 AS Salary#505]
-    +- *(1) Scan ExistingRDD[fname#132,mname#133,lname#134,id#135,gen#136,sal#137]
     
     
     
